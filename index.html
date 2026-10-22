@@ -1,1 +1,202 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alat Elektronik | Toko Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">ELEK<span>TRONIK</span></a>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak Saya</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="beranda">
+    <div class="hero-text">
+      <p class="tag">TEKNOLOGI MASA KINI</p>
+      <h1>Temukan Alat Elektronik <span>Terbaik</span></h1>
+      <p>
+        Pilihan perangkat elektronik untuk kebutuhan rumah,
+        sekolah, pekerjaan, dan hiburan kamu.
+      </p>
+      <a href="#produk" class="btn">Lihat Produk</a>
+    </div>
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=900&q=85"
+        alt="Perangkat elektronik"
+      >
+    </div>
+  </section>
+
+  <section class="produk-section" id="produk">
+    <div class="section-title">
+      <p class="tag">KOLEKSI PILIHAN</p>
+      <h2>Produk Elektronik</h2>
+      <p>Jelajahi berbagai alat elektronik favoritmu.</p>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="cariProduk"
+        placeholder="Cari laptop, headphone, kamera..."
+        oninput="cariBarang()">
+    </div>
+
+    <div class="produk-grid" id="daftarProduk">
+
+      <article class="produk-card">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80" alt="Laptop">
+        <div class="produk-info">
+          <span class="kategori">Komputer</span>
+          <h3>Laptop Modern</h3>
+          <p>Cocok untuk belajar, bekerja, dan aktivitas harian.</p>
+          <div class="produk-bawah">
+            <strong>Rp5.500.000</strong>
+            <a href="#kontak" class="btn-kecil">Pesan</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="produk-card">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80" alt="Headphone">
+        <div class="produk-info">
+          <span class="kategori">Audio</span>
+          <h3>Headphone</h3>
+          <p>Nikmati musik dan hiburan dengan nyaman.</p>
+          <div class="produk-bawah">
+            <strong>Rp350.000</strong>
+            <a href="#kontak" class="btn-kecil">Pesan</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="produk-card">
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=80" alt="Kamera">
+        <div class="produk-info">
+          <span class="kategori">Fotografi</span>
+          <h3>Kamera Digital</h3>
+          <p>Abadikan momen penting dengan hasil menarik.</p>
+          <div class="produk-bawah">
+            <strong>Rp3.200.000</strong>
+            <a href="#kontak" class="btn-kecil">Pesan</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="produk-card">
+        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=80" alt="Smartphone">
+        <div class="produk-info">
+          <span class="kategori">Gadget</span>
+          <h3>Smartphone</h3>
+          <p>Teman komunikasi dan produktivitas sehari-hari.</p>
+          <div class="produk-bawah">
+            <strong>Rp2.500.000</strong>
+            <a href="#kontak" class="btn-kecil">Pesan</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="produk-card">
+        <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80" alt="Monitor komputer">
+        <div class="produk-info">
+          <span class="kategori">Komputer</span>
+          <h3>Monitor LED</h3>
+          <p>Layar untuk komputer, belajar, dan pekerjaan.</p>
+          <div class="produk-bawah">
+            <strong>Rp1.400.000</strong>
+            <a href="#kontak" class="btn-kecil">Pesan</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="produk-card">
+        <img src="https://images.unsplash.com/photo-1609592806596-b43bada2f5b5?auto=format&fit=crop&w=700&q=80" alt="Speaker">
+        <div class="produk-info">
+          <span class="kategori">Audio</span>
+          <h3>Speaker Bluetooth</h3>
+          <p>Temani waktu santai dengan suara favoritmu.</p>
+          <div class="produk-bawah">
+            <strong>Rp250.000</strong>
+            <a href="#kontak" class="btn-kecil">Pesan</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <p id="hasilCari" class="hasil-cari"></p>
+  </section>
+
+  <section class="tentang" id="tentang">
+    <p class="tag">TENTANG KAMI</p>
+    <h2>Teknologi untuk Semua</h2>
+    <p>
+      Website ini menyediakan informasi dan katalog alat elektronik.
+      Hubungi kontak pemilik untuk menanyakan ketersediaan barang,
+      harga terbaru, dan cara pemesanan.
+    </p>
+  </section>
+
+  <section class="kontak" id="kontak">
+    <p class="tag">HUBUNGI PEMILIK</p>
+    <h2>Kontak Saya</h2>
+    <p class="kontak-desc">
+      Ada pertanyaan atau ingin memesan produk? Hubungi saya melalui
+      kontak di bawah ini.
+    </p>
+
+    <div class="kontak-grid">
+      <a class="kontak-card" href="https://wa.me/6281234567890" target="_blank" rel="noopener">
+        <span>☎</span>
+        <h3>WhatsApp</h3>
+        <p>Chat langsung dengan saya</p>
+      </a>
+
+      <a class="kontak-card" href="mailto:emailkamu@gmail.com">
+        <span>✉</span>
+        <h3>Email</h3>
+        <p>Kirim pesan melalui email</p>
+      </a>
+
+      <a class="kontak-card" href="https://instagram.com/usernamekamu" target="_blank" rel="noopener">
+        <span>◎</span>
+        <h3>Instagram</h3>
+        <p>Kunjungi profil saya</p>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <a href="#beranda" class="logo">ELEK<span>TRONIK</span></a>
+    <p>© 2026 Alat Elektronik. Dibuat untuk kebutuhan digital.</p>
+  </footer>
+
+  <script>
+    function cariBarang() {
+      const input = document.getElementById("cariProduk");
+      const kata = input.value.toLowerCase();
+      const produk = document.querySelectorAll(".produk-card");
+      let jumlah = 0;
+
+      produk.forEach(function(item) {
+        const cocok = item.textContent.toLowerCase().includes(kata);
+        item.style.display = cocok ? "" : "none";
+        if (cocok) jumlah++;
+      });
+
+      document.getElementById("hasilCari").textContent =
+        jumlah === 0 ? "Produk tidak ditemukan." :
+        kata ? "Ditemukan " + jumlah + " produk." : "";
+    }
+  </script>
+
+</body>
+</html>
+
